@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+</head>
+<body>
+    <h2 align="center">&nbsp &nbsp Signup Form</h2>
+    <form action="">
+        <table align="center">
+            <tr><th>Name</th><td><input type="text" name="name" pattern="[a-zA-Z]+" required></td></tr>
+            <tr><th>Mobile No</th><td><input type="text" name="mb" pattern="[0-9]{10}" maxlength="10" required></td></tr>
+            <tr><th>Email</th><td><input type="email" name="email" required></td></tr>
+            <tr><th>Gender</th>
+                <td>
+                    <input type="radio" name="gender" value="Male">Male
+                    <input type="radio" name="gender" value="feMale">feMale
+                </td>
+            </tr>
+            <tr><th>Hobbies</th>
+                <td>
+                    <input type="checkbox" name="Rb" value="Reading Book">Reading Book
+                    <input type="checkbox" name="Wt" value="Watch TV">Watch TV
+                    <input type="checkbox" name="PG" value="Play Games">Play Games
+                </td>
+            </tr>
+            <tr><th>Date</th>
+                <td><input type="date" max="2003-01-01"></td>
+            </tr>
+            <tr><th>Resume</th>
+                <td><input type="file"></td>
+            </tr>
+            <tr><th>Age</th>
+                <td><input type="number" min="1" max="125"></td>
+            </tr>
+            <tr><th>Signup</th>
+                <td><input type="submit" value="submit"></td>
+            </tr>
+            <tr><th>Reset</th>
+                <td><input type="reset" value="reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
