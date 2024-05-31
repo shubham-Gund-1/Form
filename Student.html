@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Student Registration Form</legend>
+        <form>
+            <table>
+                <tr>
+                    <th>First Name </th>
+                    <td><input type="text" name="name" pattern="[A-Za-z]+" required></td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td><input type="text" name="Lname" pattern="[A-Za-z]+" required></td>
+                </tr>
+                <tr>
+                    <th>Mobile No</th>
+                    <td><input type="text" name="mb" pattern="[789][0-9]{9}+" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <th>Sex</th>
+                    <td>
+                        <input type="radio" name="sex" value="Male">Male
+                        <input type="radio" name="sex" value="FeMale">FeMale
+                    </td>
+                </tr>
+                <tr>
+                    <th>Date of Birth</th>
+                    <td><input type="date" name="dob" required></td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td><textarea name="Address" rows="10" cols="20" required></textarea></td>
+                </tr>
+                <tr>
+                    <th>City</th>
+                    <td><input type="text" name="City" maxlength="50" required></td>
+                </tr>
+                <tr>
+                    <th>Pincode</th>
+                    <td><input type="text" name="Pincode" maxlength="50" pattern="[789][0-9]{9}+" required></td>
+                </tr>
+                <tr>
+                    <th>State</th>
+                    <td><input type="text" name="State" maxlength="50" pattern="[A-Za-z]+" required></td>
+                </tr>
+                <tr>
+                    <th>Country</th>
+                    <td><input type="text" name="Country" pattern="[A-Za-z]+" required></td>
+                </tr>
+                <tr>
+                    <th>Hobbies</th>
+                    <td>
+                        <input type="checkbox" name="Drawing">Drawing<br>
+                        <input type="checkbox" name="Singing">Singing<br>
+                        <input type="checkbox" name="Dancing">Dancing<br>
+                        <input type="checkbox" name="Sketing">Sketing<br>
+                        <input type="checkbox" name="Other" pattern="[A-Za-z]+">Other<br>
+                        <textarea name="other" placeholder="E.x. Teching" maxlength="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Qualifications</th>
+                    <td>
+                        <input type="checkbox" name="s">HighSchool (10Th)<br>
+                        <input type="checkbox" name="Hs">Higher School (12Th)<br>
+                        <input type="checkbox" name="g">Graduation (Bachelors)<br>
+                        <input type="checkbox" name="pg">Post Graduation (Masters)<br>
+                        <input type="checkbox" name="phd">PHD
+                    </td>
+                </tr>
+                <tr>
+                    <th>Courses</th>
+                    <td>
+                        <input type="radio" name="Courses">BCA (Bachelor of computer Application)<br>
+                        <input type="radio" name="Courses">B.Com (Bachelor of commerce)<br>
+                        <input type="radio" name="Courses">BSc (Bachelor of Science)<br>
+                        <input type="radio" name="Courses">BA (Bachelor of Arts)<br>
+                        <input type="radio" name="Courses">MCA (Master of computer Application)<br>
+                        <input type="radio" name="Courses">M.Com (Master of commerce)<br>
+                        <input type="radio" name="Courses">MSc (Master of Science)<br>
+                        <input type="radio" name="Courses">MA (Master of Arts)<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset" name="reset">
+                        <input type="submit" name="submit Form">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+        
+</body>
+</html>

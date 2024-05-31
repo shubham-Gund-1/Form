@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Admission form</title>
+</head>
+<body>
+    <fieldset align="center">
+        <img src="orange-itech.png" alt="Logo" height="100">
+        <h2 style="color:orange">Orange I-Tech</h2>
+    </fieldset>
+    <fieldset align="center" style="margin-top: 20px;;">
+        <u><h2>Student Admission Form</h2></u>
+    </fieldset>
+    <form>
+        <u><h5 align="center">Your Admission Information Below :</h5></u>
+        <table align="center">
+            <tr>
+                <th>First Name :-</th>
+                <td><input type="text" name="name" pattern="[A-Za-z]+" required></td>
+            </tr>
+            <tr>
+                <th>Middle Name :-</th>
+                <td><input type="text" name="Mname" pattern="[A-Za-z]+" required></td>
+            </tr>
+            <tr>
+                <th>Last Name :-</th>
+                <td><input type="text" name="Lname" pattern="[A-Za-z]+" required></td>
+            </tr>
+            <tr>
+                <th>Date of Birth :-</th>
+                <td><input type="date" name="DOB" required></td>
+            </tr>
+            <tr>
+                <th>Gender :-</th>
+                <td>
+                    <input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender">FeMale
+                    <input type="radio" name="Gender">Other
+                </td>
+            </tr>
+            <tr>
+                <th>Phone No :</th>
+                <td>
+                    <input type="text" name="ph" pattern="[789][0-9]{9}+" maxlength="10" required>
+                </td>
+            </tr>
+            <tr>
+                <th>Email :-</th>
+                <td><input type="email" name="email" pattern="[^ @]@[^ @]" required></td>
+            </tr>
+            <tr>
+                <th>Current Address :-</th>
+                <td>
+                    <textarea name="CA" required ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>Permanent Address :-</th>
+                <td>
+                    <textarea name="MA" ></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" name="reset">
+                    <input type="Submit" name="Submit Form">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
