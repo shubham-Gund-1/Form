@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personalia:</legend>
+            <table border="1">
+                <tr>
+                    <th>ID</th>
+                    <td><input type="text" name="name" id="name" value="123" readonly disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text" name="name" id="name" required pattern="[a-zA-Z]"></td>
+                </tr>
+                <tr>
+                    <th>Mobile No</th>
+                    <td>
+                        <input type="text" name="uname" id="uname" required pattern="[0-9]{10}" maxlength="10" size=10
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email" name="psw" id="psw" required placeholder="a@gmail.com" autofocus></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <input type="radio" name="gender" id="gender" value="Male">Male
+                        <input type="radio" name="gender" id="gender" value="FeMale">Female
+                    </td>
+                </tr>
+                <tr>
+                    <th>Hobbies</th>
+                    <td>
+                        <input type="checkbox" name="chat" value="chat">Chatting
+                        <input type="checkbox" name="tra" value="tra">Travelling
+                    </td>
+                </tr>
+                <tr>
+                    <th>Date</th>
+                    <td>
+                        <input type="date" name="dob" max="1979-12-31">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Resume</th>
+                    <td>
+                        <input type="file" name="resume">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>
+                        <input type="number" name="age" max="125" min="1">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Year</th>
+                    <td>
+                        <select name="year" id="year">
+                            <option value="FY">FY</option>
+                            <option value="SY">SY</option>
+                            <option value="TY">TY</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>
+                        <textarea name="addr" id="addr" rows="7" cols="40"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th><input type="submit" value="SignUp"></th>
+                    <th><input type="reset" value="Reset"></th>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
